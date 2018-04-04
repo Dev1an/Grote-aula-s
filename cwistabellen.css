@@ -1,0 +1,280 @@
+/* datum laatste wijziging: 20 april 2004 */
+
+/* probleem in tabellen NN47 indien padding op TD en TH samen met stijl BLOCKQUOTE gebruikt, oplossing stijl insprong gebruiken in tabellen */
+/* probleem in NN47 indien padding op bv 5px staat, geeft steeds meer witruimte voor elke volgende tabel */
+
+
+CAPTION {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+}
+
+/* TABLEbz = border zonder */
+TABLE.TABLEbz { 
+  border-style: none; 
+  border-collapse: collapse;    /* randen tussen cellen onderling aansluiten voor IE55 */
+  border-spacing: 0px;          /* randen tussen cellen onderling aansluiten voor NN61 */
+  padding: 0px;  
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  background-color: white; 
+  color: black; 
+  line-height: 17px; 
+}
+
+/* TH zonder border */
+TH.THbz { 
+  border-style: none; 
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  font-weight: bold;
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TD zonder border */
+TD.TDbz { 
+  border-style: none; 
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TD zonder border rechts uitlijnen */
+TD.TDbzr { 
+  border-style: none; 
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: right;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TD zonder border links uitlijnen */
+TD.TDbzl { 
+  border-style: none; 
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TABLEgr = tabellen grijs */
+TABLE.TABLEgr { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #CCC;
+  border-collapse: collapse;    /* randen tussen cellen onderling aansluiten voor IE55 */
+  border-spacing: 0px;          /* randen tussen cellen onderling aansluiten voor NN61 */
+  padding: 0px;  
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  background-color: white; 
+  color: black;
+  line-height: 17px; 
+}
+
+/* THagr = header achtergrond grijs */
+TH.THagr { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: white;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  font-weight: bold;
+  background-color: #CCC; 
+  color: black;
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TDagr = data achtergrond grijs */
+TD.TDagr { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: white;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: #CCC; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+
+/* THbgr = header border grijs */
+
+TH.THbgr { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #CCC;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+   /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+
+/* TDbgr = data border grijs */
+
+TD.TDbgr { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #CCC;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+   /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+
+/*TABLEbl = blauwe tabellen */
+TABLE.TABLEbl { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #72AABE;
+  border-collapse: collapse;      /* randen tussen cellen onderling aansluiten voor IE55 */
+  border-spacing: 0px;            /* randen tussen cellen onderling aansluiten voor NN61 */
+  padding: 0px;  
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  background-color: white; 
+  color: black; 
+  line-height: 17px; 
+}
+
+
+/* THbabl = header blauwe achtergrond */
+TH.THabl { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: white;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  font-weight: bold;
+  background-color: #72AABE; 
+  color: white;
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+/*TDabl = data blauwe achtergrond */
+TD.TDabl { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: white;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: #72AABE; 
+  color: white; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+/* THbbl = header blauwe border */
+TH.THbbl { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #72AABE;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+
+
+/* TDbbl = data blauwe border */
+TD.TDbbl { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #72AABE;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  padding: 2px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;     /* nodig voor NN47 */
+  background-color: white; 
+  color: black; 
+  vertical-align: top; 
+  text-align: left;
+  line-height: 17px; 
+  /* color en background-color worden geerfd van TABLE */
+  /* font-size erft van TABLE in IE55 en NN61, van BODY in NN47 */
+}
+
+/* TR wordt niet gebruikt omdat de kleur en het lettertype van de tekst in NN47 en NN61 niet correct worden weergegeven */

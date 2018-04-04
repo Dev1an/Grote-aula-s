@@ -1,0 +1,499 @@
+/* datum laatste wijziging: 20 april 2004 */
+
+/* BUGS */
+/*  IN NN47: IN TABEL BLOCKQUOTE IN COMBINATIE MET PADDING DOET DE TEKST NAAR RECHTS OPSCHUIVEN ZODAT TEKST VAN LAATSTE CEL NIET TE ZIEN IS */
+
+
+
+
+/* BLAUWE LINKERNAVIGATIEBALK (voor alle pagina's) */
+/* A.menu is nodig voor NN47 indien we de kleur van de bezochte links anders zouden defini�ren dan de niet bezochte??? */
+.menu {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 12px; 
+  color: #FFF;
+  background-color: #72AABE;
+}
+
+A.menu {
+  color: #FFF;
+  background-color: #72AABE;
+  text-decoration: none;
+}
+
+A.menu:link {
+  color: #FFF; 
+  background-color: #72AABE;
+  text-decoration: none;
+}
+
+A.menu:active {
+  text-decoration: none;
+}
+
+A.menu:visited {
+  color: #FFF; 
+  background-color: #72AABE;
+  text-decoration: none;
+}
+
+A.menu:hover {
+  color: #F90; 
+  background-color: #72AABE;
+  text-decoration: none;
+}
+
+/* RECHTERNAVIGATIE (alleen voor toppagina's) */
+.nieuwstitel {
+  font-family: Arial, Helvetica, Sans-Serif; 
+  font-size: 10px; 
+  color: #FFF;
+}
+
+.nieuws {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 11px;
+}
+
+A.nieuws {
+ color: #000;
+ background-color: #FFF;
+ text-decoration: none;
+}
+
+A.nieuws:link {
+  color: #000; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.nieuws:active {
+  color: #72AABE; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.nieuws:visited {
+  color: #000; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.nieuws:hover {
+  color: #72AABE; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+/* VOETNAVIGATIE (alleen voor toppagina's) */
+.voet {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 10px;
+}
+
+A.voet {
+  color: #000; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.voet:link {
+  color: #000; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.voet:active {
+  color: #72AABE; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.voet:visited {
+  color: #000; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+A.voet:hover { 
+  color: #72AABE; 
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+/* BODY TOPPAGINA'S */
+.titel {
+  font-family: Arial, Helvetica, Sans-Serif; 
+  font-size: 18px; 
+  color: #999; 
+  background-color: transparent;
+  line-height: 32px;
+}
+
+.balkje {
+  font-family: Arial, Helvetica, Sans-Serif; 
+  font-size: 11px; 
+  color: #FFF; 
+  background-color: #999;
+  font-weight: bold
+}
+
+.txttitel {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 13px;
+}
+
+.txt {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 11px;
+  line-height: 13px;
+}
+
+/* HYPERLINKS OP GEWONE TEKST (voor alle pagina's) */
+A:link {
+  color: #00C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+A:active {
+  color: #00C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+A:visited { 
+  color: #00C;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #00C;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+/* DOCUMENTOPMAAK (voor onderliggende pagina's) */
+
+TABLE, TH, TD {
+  font-size: 12px;
+}
+
+BODY {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  color: #000;
+  background-color: #FFF;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-left: 6px;
+}
+
+/* de stijlen .achtergrblauw en .achtergrgrijs werden speciaal gedefinieerd voor tabellen maar kunnen ook in gewone tekst worden gebruikt */
+.achtergrblauw {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  border: 1px solid #72AABE;  /* alleen nodig voor NN47, anders wordt witte tekst op witte achtergrond getoond in combinatie met .DIVaandacht en .DIVachtergrblauw */                  
+  color: white;
+  background-color: #72AABE;
+}
+
+.achtergrgrijs {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  border: 1px solid #CCC;
+  color: black;
+  background-color: #CCC;
+}
+
+ADDRESS {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+/* voor hyperlinks op blauwe tekst met witte achtergrond */
+/* A.linkblauwachtergrwit is nodig voor NN47??? */
+A.linkblauwachtergrwit, A.linkblauwachtergrwit:link, A.linkblauwachtergrwit:visited {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  color: #72AABE;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+A.linkblauwachtergrwit:hover {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  color: #00C;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* voor hyperlinks op blauwe achtergrond */
+/* A.linkachtergrblauw is nodig voor NN47??? */
+A.linkachtergrblauw, A.linkachtergrblauw:link, A.linkachtergrblauw:visited {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  color: #FFF;
+  background-color: #72AABE;
+  text-decoration: underline;
+}
+
+A.linkachtergrblauw:hover {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  color: #F90;
+  background-color: #72AABE;
+}
+
+.blauw {
+  color: #72AABE;
+  background-color: transparent;
+}
+    
+/* BLOCKQUOTE niet gebruiken in tabellen, maar stijl insprong voor NN47 */
+/* font size is weggelaten voor NN47 omdat deze anders kleiner wordt weergegeven */
+BLOCKQUOTE { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.center {
+  text-align: center;
+}
+
+DIV.DIVaandacht {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #F00;
+  padding: 10px; 
+  color: white;
+  background-color: #72AABE;
+  width: 85%;  /* indien width meer dan 85% in NN47 moet er op scherm worden gescrolled en valt er stuk weg bij afdruk */
+               /* indien width niet gedefinieerd wordt past de kader zich aan aan breedte van de tekst */
+}
+
+DIV.DIVachtergrblauw {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  border-width: 1px;  /* randje wordt afgedrukt in IE50 maar geeft op scherm wel blauw randje met wat wit in NN47 */
+  border-style: solid;
+  border-color: #72AABE;
+  padding: 10px; 
+  color: white;
+  background-color: #72AABE;
+  width: 85%;  /* indien width meer dan 85% in NN47 moet er op scherm worden gescrolled en valt er stuk weg bij afdruk */
+               /* indien width niet gedefinieerd wordt past de kader zich aan aan breedte van de tekst */
+}
+
+DL {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+}
+
+EM { 
+  font-style: italic;
+}
+
+H1, H2, H3, H4, H5, H6 {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  line-height: 140%;
+}
+
+H1 {
+  font-size: 160%;
+  font-weight: bold;
+} 
+
+H2 {
+  font-size: 140%;
+  font-weight: bold;
+} 
+
+H3 {
+  font-size: 120%;
+  font-style: italic;
+}	
+ 
+H4 {
+  font-size: 120%;
+  font-weight: bold;
+}	
+ 
+H5 {
+  font-size: 110%;
+  font-style: italic;
+}	
+ 
+H6 {
+  font-size: 100%;
+  font-weight: bold;
+}	 
+
+HR.HRblauw {
+  color: #72AABE;
+  background-color: transparent;
+}	 
+
+IMG.IMGlinks {
+  float: left;
+  border-style: solid;
+  padding-right: 10px;
+}
+
+IMG.IMGrechts {
+  float: right;
+  border-style: solid; 
+  padding-left: 10px;
+}
+
+/* stijl insprong is nodig in tabellen ipv BLOCKQUOTE voor NN47 maar kan ook in gewone tekst worden gebruikt */
+.insprong {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 40px;
+}
+
+OL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: decimal;
+}
+
+OL OL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: lower-alpha;
+}
+  
+OL OL OL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: lower-roman; 
+}
+
+OL OL UL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+  list-style-type: disc; 
+}
+
+P {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+P.Pzonderwit { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  margin-top: 0px; margin-bottom: 0px; 
+}
+
+P.Pborder {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  border-style: solid; 
+  border-width: 1px; 
+  padding: 5px; 
+  width: 85%;  /* indien width meer dan 85% in NN47 moet er op scherm worden gescrolled en valt er stuk weg bij afdruk */
+               /* indien width niet gedefinieerd wordt past de kader zich aan aan breedte van de tekst */
+}
+
+P.Pborderblauw {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #72AABE;
+  padding: 5px; 
+  width: 85%;  /* indien width meer dan 85% in NN47 moet er op scherm worden gescrolled en valt er stuk weg bij afdruk */
+               /* indien width niet gedefinieerd wordt past de kader zich aan aan breedte van de tekst */
+}
+
+P.Pborderblauwtekstblauw {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #72AABE;
+  padding: 5px; 
+  color: #72AABE;
+  background-color: white;
+  width: 85%;  /* indien width meer dan 85% in NN47 moet er op scherm worden gescrolled en valt er stuk weg bij afdruk */
+               /* indien width niet gedefinieerd wordt past de kader zich aan aan breedte van de tekst */
+}
+
+SPAN.SPANblauw { 
+  color: #72AABE;
+  background-color: transparent;
+}
+
+SPAN.SPANoranje { 
+  color: #F90;
+  background-color: transparent;
+}
+
+STRONG {
+  font-weight: bold;
+}
+
+SUB { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+SUP { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+UL           { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+UL UL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+UL UL UL { 
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+UL.ULpijl {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif; 
+  font-size: 12px;
+  line-height: 17px;
+  list-style-image: url('http://www.kuleuven.be/cwis/images/pijl.gif'); 
+  list-style-type: disc
+}
+
+.websitetitel {
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 18px;
+  font-weight: bold;
+}
